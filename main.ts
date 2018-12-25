@@ -238,9 +238,9 @@ namespace colorbit {
         //% parts="colorbit"
         showColorIcon(myicon: ColorIcon, rgb: number): void {
             let str: string = "51bitpasswd:";
-            let myicon1: number = myicon>>16;
-            let myicon2: number = (0xffff0000&(myicon<<16))>>16;
-            this.setStringColor(str+myicon1+":"+myicon2+'',rgb);
+            str = ''+ myicon;
+            str = str.substr(12,6)+":0x"+str.substr(18,4);
+            this.setStringColor(str,rgb);
         }
 	
         /**
