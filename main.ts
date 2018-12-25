@@ -25,6 +25,19 @@ enum BitColors {
 }
 
 /**
+ * Different ColorIcons for ColorBit
+ */
+export enum ColorIcon {
+        //% block="ChristmasTree"
+        ChristmasTree = 0x23be4200,
+        //% block="heart"
+        heart = 0x57fe0200,
+        //% block="happy"
+        happy = 0x28101700,
+    }
+
+
+/**
  * Different modes for RGB or RGB+W NeoPixel strips
  */
 enum BitColorMode {
@@ -213,6 +226,22 @@ namespace colorbit {
 			}
 			return dec_num;
 		}
+        
+        /**
+         * Show ColorBit Icon with a given color (range 0-255 for r, g, b). 
+         * @param input LED ColorIcon
+         * @param rgb RGB color of the LED
+         */
+        //% blockId="colorbit_51bit_show_color_icon" block="%colorbit_51bit|show ColorBit Icon %myicon|with %rgb=colorbit_colors" 
+        //% blockGap=8
+        //% weight=100
+        //% parts="colorbit"
+        showColorIcon(myicon: ColorIcon, rgb: number): void {
+            let str: string = "51bitpasswd:";
+            let myicon1: number = myicon>>16;
+            let myicon2: number = (0xffff0000&(myicon<<16))>>16;
+            this.setStringColor(str+myicon1+":"+myicon2+'',rgb);
+        }
 	
         /**
          * Show ColorBit string with a given color (range 0-255 for r, g, b). 
@@ -224,9 +253,9 @@ namespace colorbit {
         //% weight=100
         //% parts="colorbit"
         setStringColor(input: string, rgb: number): void {
-            if(input.indexOf("colorbitpasswd:",0)===0) 
+            if(input.indexOf("51bitpasswd:",0)===0) 
             {
-				//ChristmasTree: "colorbitpasswd:0x23be:0x4200"
+				//ChristmasTree: "51bitpasswd:0x23be:0x4200"
                 let pixeloffset1=this.fn_HextoDec(input.substr(12, 6));
                 let pixeloffset2=this.fn_HextoDec(input.substr(19, 6));
                 for (let i = 0; i < 16; ++i) {
