@@ -1,0 +1,26 @@
+/**
+* test Functions
+*/
+
+//% weight=0 color=#794044 icon="\uf108" block="test"
+namespace test {
+    export enum colorIcon {
+        //% block="ChristmasTree"
+        ChristmasTree = 0,
+        //% block="heart"
+        heart = 1,
+        //% block="happy"
+        happy = 2,
+    }
+
+	/**
+     * show color icon
+     */
+    //% blockId="test_showcoloricon" block="Show color Icon: %mycolor"
+    //% weight=51
+    export function showColorIcon(mycolor: colorIcon): void {
+        basic.showNumber(mycolor);
+    }
+}
+
+test.showColorIcon(test.colorIcon.ChristmasTree)
