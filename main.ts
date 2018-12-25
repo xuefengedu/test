@@ -361,7 +361,7 @@ namespace colorbit {
         //% weight=100
         //% parts="colorbit"
         setIntColor(input: number, rgb: number): void {
-            this.setStringColor(''+Math.trunc(input), rgb);
+            this.setStringColor(' '+input+' ', rgb);
         }
 		
 		/**
@@ -374,7 +374,7 @@ namespace colorbit {
         //% weight=99
         //% parts="colorbit"
         setScrollIntColor(input: number, rgb: number): void {
-			this.setScrollStringColor(''+Math.trunc(input), rgb);
+			this.setScrollStringColor(' '+input+' ', rgb);
 		}
 
         /**
