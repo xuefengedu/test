@@ -27,7 +27,7 @@ enum BitColors {
 /**
  * Different ColorIcons for ColorBit
  */
-export enum ColorIcon {
+enum ColorIcon {
         //% block="ChristmasTree"
         ChristmasTree = 0x23be4200,
         //% block="heart"
