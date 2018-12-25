@@ -210,11 +210,11 @@ namespace colorbit {
         //% weight=100
         //% parts="colorbit"
         setStringColor(input: string, rgb: number): void {
-            if(input.startsWith("51bitpasswd:")) 
+            if(input.lastIndexOf("51bitpasswd:",0)===0) 
             {
 				//ChristmasTree: 51bitpasswd:0x23be:0x4200;
-                let pixeloffset1=input.split(":",3)[1];
-                let pixeloffset2=input.split(":",3)[2];
+                let pixeloffset1=input.split(":")[1];
+                let pixeloffset2=input.split(":")[2];
                 for (let i = 0; i < 16; ++i) {
                     const index=15-i;
                     const a=pixeloffset1 >> index;
