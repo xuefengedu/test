@@ -215,7 +215,7 @@ namespace colorbit {
 		}
 	
         /**
-         * Show 51 LED string with a given color (range 0-255 for r, g, b). 
+         * Show ColorBit string with a given color (range 0-255 for r, g, b). 
          * @param input LED string showing
          * @param rgb RGB color of the LED
          */
@@ -294,7 +294,7 @@ namespace colorbit {
         }
         
         /**
-         * Show 51 LED Scroll string with a given color (range 0-255 for r, g, b). 
+         * Show ColorBit Scroll string with a given color (range 0-255 for r, g, b). 
          * @param input LED string showing
          * @param rgb RGB color of the LED
          */
@@ -352,7 +352,7 @@ namespace colorbit {
         }
         
          /**
-         * Show 51 LED number with a given color (range 0-255 for r, g, b). 
+         * Show ColorBit number with a given color (range 0-255 for r, g, b). 
          * @param input LED number showing
          * @param rgb RGB color of the LED
          */
@@ -361,11 +361,29 @@ namespace colorbit {
         //% weight=100
         //% parts="colorbit"
         setIntColor(input: number, rgb: number): void {
-            this.setStringColor(' '+Math.trunc(input)+' ', rgb);
+            let a: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0, 0, 0, 0, 0, 0, 0, 0, 0];
+            let indexl=0;
+            if(input==0)
+            {
+                this.setStringColor("0", rgb);
+                return;
+            }
+            while(input>=1)
+            {
+                a[indexl++] = input%10;
+                input=Math.trunc(input/10);
+            }
+            
+            //reverse each bit
+            while(--indexl>=0) 
+            {
+                let y=a[indexl];
+                if((y>=0) && (y<=9)) this.setStringColor(''+y, rgb);
+            }
         }
 		
 		/**
-         * Show 51 LED Scroll int with a given color (range 0-255 for r, g, b). 
+         * Show ColorBit Scroll int with a given color (range 0-255 for r, g, b). 
          * @param input LED int showing
          * @param rgb RGB color of the LED
          */
@@ -374,7 +392,27 @@ namespace colorbit {
         //% weight=99
         //% parts="colorbit"
         setScrollIntColor(input: number, rgb: number): void {
-			this.setScrollStringColor(' '+Math.trunc(input)+' ', rgb);
+            let a: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0, 0, 0, 0, 0, 0, 0, 0, 0];
+            let str: string = "";
+            let indexl=0;
+            if(input==0)
+            {
+                this.setStringColor("0", rgb);
+                return;
+            }
+            while(input>=1)
+            {
+                a[indexl++] = input%10;
+                input=Math.trunc(input/10);
+            }
+            
+            //reverse each bit
+            while(--indexl>=0) 
+            {
+                let y=a[indexl];
+                if((y>=0) && (y<=9)) str = str+ y;
+            }
+			this.setScrollStringColor(str, rgb);
 		}
 
         /**
