@@ -200,6 +200,20 @@ namespace colorbit {
             this.ismulticolor=yes;
         }
 
+		function fn_HextoDec(hex_num: string): number {
+			let dec_num = 0
+			let hex_arr = "0123456789abcdef"
+			for (let index = 0; index <= hex_num.length - 1; index++) {
+				let char = hex_num.charAt(hex_num.length - 1 - index)
+				for (let index2 = 0; index2 <= 15; index2++) {
+					if (char.compare(hex_arr.charAt(index2)) == 0) {
+						dec_num = dec_num + index2 * Math.pow(16, index)
+					}
+				}
+			}
+			return dec_num
+		}
+	
         /**
          * Show 51 LED string with a given color (range 0-255 for r, g, b). 
          * @param input LED string showing
@@ -210,11 +224,11 @@ namespace colorbit {
         //% weight=100
         //% parts="colorbit"
         setStringColor(input: string, rgb: number): void {
-            if(input.lastIndexOf("51bitpasswd:",0)===0) 
+            if(input.indexOf("51bitpasswd:",0)===0) 
             {
-				//ChristmasTree: 51bitpasswd:0x23be:0x4200;
-                let pixeloffset1=input.split(":")[1];
-                let pixeloffset2=input.split(":")[2];
+				//ChristmasTree: "51bitpasswd:0x23be:0x4200"
+                let pixeloffset1=this.fn_HextoDec(input.substr(12, 6));
+                let pixeloffset2=this.fn_HextoDec(input.substr(19, 6));
                 for (let i = 0; i < 16; ++i) {
                     const index=15-i;
                     const a=pixeloffset1 >> index;
