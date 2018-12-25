@@ -219,7 +219,7 @@ namespace colorbit {
          * @param input LED string showing
          * @param rgb RGB color of the LED
          */
-        //% blockId="colorbit_51bit_set_string_color" block="%colorbit_51bit|show colorbit_51bit string %input|with %rgb=colorbit_colors" 
+        //% blockId="colorbit_51bit_set_string_color" block="%colorbit_51bit|show ColorBit string %input|with %rgb=colorbit_colors" 
         //% blockGap=8
         //% weight=100
         //% parts="colorbit"
@@ -298,7 +298,7 @@ namespace colorbit {
          * @param input LED string showing
          * @param rgb RGB color of the LED
          */
-        //% blockId="colorbit_51bit_set_scrollstring_color" block="%colorbit_51bit|show colorbit_51bit scroll string %input|with %rgb=colorbit_colors" 
+        //% blockId="colorbit_51bit_set_scrollstring_color" block="%colorbit_51bit|show ColorBit scroll string %input|with %rgb=colorbit_colors" 
         //% blockGap=8
         //% weight=99
         //% parts="colorbit"
@@ -356,7 +356,7 @@ namespace colorbit {
          * @param input LED number showing
          * @param rgb RGB color of the LED
          */
-        //% blockId="colorbit_51bit_set_int_color" block="%colorbit_51bit|show colorbit_51bit number %input|with %rgb=colorbit_colors" 
+        //% blockId="colorbit_51bit_set_int_color" block="%colorbit_51bit|show ColorBit number %input|with %rgb=colorbit_colors" 
         //% blockGap=8
         //% weight=100
         //% parts="colorbit"
@@ -369,7 +369,7 @@ namespace colorbit {
          * @param input LED int showing
          * @param rgb RGB color of the LED
          */
-        //% blockId="colorbit_51bit_set_scrollint_color" block="%colorbit_51bit|show colorbit_51bit scroll int %input|with %rgb=colorbit_colors" 
+        //% blockId="colorbit_51bit_set_scrollint_color" block="%colorbit_51bit|show ColorBit scroll int %input|with %rgb=colorbit_colors" 
         //% blockGap=8
         //% weight=99
         //% parts="colorbit"
@@ -811,7 +811,7 @@ namespace colorbit {
      * Init colorbit.
      * @param pin the pin where the colorbit is connected.
      */
-    //% blockId="colorbit_initcolorbit" block="colorbit_51bit leds at pin %pin| as %mode"
+    //% blockId="colorbit_initcolorbit" block="ColorBit leds at pin %pin| as %mode"
     //% weight=101 blockGap=8
     //% parts="colorbit"
     //% trackArgs=0,2
