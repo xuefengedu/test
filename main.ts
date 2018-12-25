@@ -361,7 +361,7 @@ namespace colorbit {
         //% weight=100
         //% parts="colorbit"
         setIntColor(input: number, rgb: number): void {
-            this.setStringColor(' '+input+' ', rgb);
+            this.setStringColor(' '+Math.trunc(input)+' ', rgb);
         }
 		
 		/**
@@ -374,7 +374,7 @@ namespace colorbit {
         //% weight=99
         //% parts="colorbit"
         setScrollIntColor(input: number, rgb: number): void {
-			this.setScrollStringColor(' '+input+' ', rgb);
+			this.setScrollStringColor(' '+Math.trunc(input)+' ', rgb);
 		}
 
         /**
@@ -800,7 +800,7 @@ namespace colorbit {
         strip._length = numleds;
         strip._mode = mode;
         strip._matrixWidth = 0;
-        strip.setBrightness(18);
+        strip.setBrightness(16);
         strip.setPin(pin);
         strip.ismulticolor=false;
         strip.lastcolor=BitColors.Red;
@@ -824,7 +824,7 @@ namespace colorbit {
         strip._length = 25;
         strip._mode = mode;
         strip._matrixWidth = 0;
-        strip.setBrightness(18);
+        strip.setBrightness(16);
         strip.setPin(pin);
         strip.ismulticolor=false;
         strip.lastcolor=BitColors.Red;
