@@ -15,6 +15,7 @@
   "ColorIcon.ChristmasTree|block": "圣诞树",
   "ColorIcon.heart|block": "心形",
   "ColorIcon.happy|block": "高兴",
+  "colorbit.Strip.showColorIcon|block": "%colorbit_51bit|显示 ColorBit 图标： %myicon|且颜色为 %rgb=colorbit_colors",
   "colorbit.Strip.showColor|block": "%colorbit_51bit|显示颜色%rgb=colorbit_colors",
   "colorbit.Strip.setMultiColor|block": "%colorbit_51bit|设置每个灯为多彩色: %yes",
   "colorbit.Strip.showRainbow|block": "%colorbit_51bit|显示彩虹特效 （色相）从%startHue|到%endHue",
