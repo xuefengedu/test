@@ -295,16 +295,6 @@ namespace colorbit {
             this.show();
         }
 	
-	/**
-	 * Draws an image on the ColorBit screen.
-	 * @param leds the pattern of LED to turn on/off
-	 * @param rgb RGB color of the LED
-	 */
-	//% weight=95 blockGap=8
-	//% imageLiteral=1 async
-	//% blockId=colorbit_show_color_leds
-	//% block="%colorbit_51bit|show ColorBit leds with color" icon="\uf00a"
-	//% parts="colorbit"
 	showColorLeds(leds: string): void {
             console.log("color leds: " + leds);
             return;
@@ -1069,6 +1059,20 @@ namespace colorbit {
         strip.ismulticolor=false;
         strip.lastcolor=BitColors.Red;
         return strip;
+    }
+
+    /**
+    * Draws an image on the ColorBit screen.
+    * @param leds the pattern of LED to turn on/off
+    * @param strip the variable of ColorBit
+    */
+    //% blockId="colorbit_show_color_leds" block="%colorbit_51bit|ColorBit leds"
+    //% imageLiteral=1
+    //% weight=95 blockGap=8
+    //% icon="\uf00a"
+    //% parts="colorbit" shim=colorbit::showColorLeds
+    export function showColorBitLeds(leds: string, colorbit_51bit: Strip): void {
+        colorbit_51bit.showColorLeds('Test:' + leds);
     }
 
     /**
