@@ -354,7 +354,7 @@ namespace colorbit {
         //% icon.fieldEditor="imagedropdown"
         //% icon.fieldOptions.columns="5"
         //% icon.fieldOptions.width="380"
-        //% icon.fieldOptions.maxRows=9
+        //% icon.fieldOptions.maxRows=5
         showColorIcon(myicon: ColorIcon, rgb: number): void {
             let str: string = "";
             if(myicon==0) str="51bitpasswd:0x23be,0x4200";     //ChristmasTree
