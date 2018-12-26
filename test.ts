@@ -15,9 +15,9 @@ namespace test {
     //% weight=95 blockGap=8
     //% icon="\uf00a"
     //% parts="test" shim=colorbit::showColorLeds
-    export function showColorBitLeds(leds: string): number {
+    export function showColorBitLeds(leds: string): string {
         basic.showString('A:' + leds);
         console.log("color leds: " + leds);
-	return 0;
+	return "test";
     }
 }
