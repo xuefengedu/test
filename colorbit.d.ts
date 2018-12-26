@@ -13,6 +13,6 @@ declare namespace colorbit {
 	//% imageLiteral=1 async
 	//% blockId=colorbit_show_color_leds
 	//% block="show ColorBit leds" icon="\uf00a"
-    //% parts="colorbit" interval.defl=400 shim=colorbit::showLeds
+    //% parts="colorbit" interval.defl=400 shim=colorbit::showColorLeds
     function showColorLeds(leds: string, interval?: int32): void;
 }
