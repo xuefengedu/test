@@ -5,8 +5,9 @@
  */
 //% weight=5 color=#2699BF icon="\uf110"
 namespace colorbit {
+	//%
         void showColorLeds(ImageLiteral_ leds) {
 	    //MicroBitImage i(imageBytes(leds));
-	    basic.showString(''+leds);
+	    //basic.showString(''+leds);
         }
 }
