@@ -294,20 +294,6 @@ namespace colorbit {
             this.setAllRGB(rgb);
             this.show();
         }
-        
-	/**
- 	 * Draws an image on the ColorBit screen.
- 	 * @param leds the pattern of LED to turn on/off
- 	 */
- 	//% weight=95 blockGap=8
-	//% imageLiteral=1
-	//% blockId=colorbit_show_color_leds
-	//% block="%colorbit_51bit|show ColorBit leds with color" icon="\uf00a"
-	//% parts="colorbit" shim=colorbit::showColorLeds
-	showColorLeds(leds: string): void {
-	    console.log("color leds: " + leds);
-             return;
-     	}
 	
         nextNum(): number {
             if(this.lastcolor==BitColors.Red)
