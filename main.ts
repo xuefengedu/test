@@ -305,7 +305,7 @@ namespace colorbit {
 	//% blockId=colorbit_show_color_leds
 	//% block="%colorbit_51bit|show ColorBit leds" icon="\uf00a"
 	//% parts="colorbit" interval.defl=400 shim=colorbit::showColorLeds
-	showColorLeds(leds: string, interval?: int32): void {
+	showColorLeds(leds: string): void {
             console.log("color leds: " + leds);
             return;
     	}
