@@ -31,124 +31,124 @@ enum ColorIcon {
     //% jres=coloricons.tree
     ChristmasTree = 0,
     //% block="heart"
-    //% jres=coloricons.heart
+    //% jres=icons.heart
     Heart,
     //% block="small heart"
-    //% jres=coloricons.smallheart
+    //% jres=icons.smallheart
     SmallHeart,
     //% block="yes"
-    //% jres=coloricons.yes
+    //% jres=icons.yes
     Yes,
     //% block="no"
-    //% jres=coloricons.no
+    //% jres=icons.no
     No,
     //% block="happy"
-    //% jres=coloricons.happy
+    //% jres=icons.happy
     Happy,
     //% block="sad"
-    //% jres=coloricons.sad
+    //% jres=icons.sad
     Sad,
     //% block="confused"
-    //% jres=coloricons.confused
+    //% jres=icons.confused
     Confused,
     //% block="angry"
-    //% jres=coloricons.angry
+    //% jres=icons.angry
     Angry,
     //% block="asleep"
-    //% jres=coloricons.asleep
+    //% jres=icons.asleep
     Asleep,
     //% block="surprised"
-    //% jres=coloricons.surprised
+    //% jres=icons.surprised
     Surprised,
     //% block="silly"
-    //% jres=coloricons.silly
+    //% jres=icons.silly
     Silly,
     //% block="fabulous"
-    //% jres=coloricons.fabulous
+    //% jres=icons.fabulous
     Fabulous,
     //% block="meh"
-    //% jres=coloricons.meh
+    //% jres=icons.meh
     Meh,
     //% block="t-shirt"
-    //% jres=coloricons.tshirt
+    //% jres=icons.tshirt
     TShirt,
     //% block="roller skate"
-    //% jres=coloricons.rollerskate
+    //% jres=icons.rollerskate
     Rollerskate,
     //% block="duck"
-    //% jres=coloricons.duck
+    //% jres=icons.duck
     Duck,
     //% block="house"
-    //% jres=coloricons.house
+    //% jres=icons.house
     House,
     //% block="tortoise"
-    //% jres=coloricons.tortoise
+    //% jres=icons.tortoise
     Tortoise,
     //% block="butterfly"
-    //% jres=coloricons.butterfly
+    //% jres=icons.butterfly
     Butterfly,
     //% block="stick figure"
-    //% jres=coloricons.stickfigure
+    //% jres=icons.stickfigure
     StickFigure,
     //% block="ghost"
-    //% jres=coloricons.ghost
+    //% jres=icons.ghost
     Ghost,
     //% block="sword"
-    //% jres=coloricons.sword
+    //% jres=icons.sword
     Sword,
     //% block="giraffe"
-    //% jres=coloricons.giraffe
+    //% jres=icons.giraffe
     Giraffe,
     //% block="skull"
-    //% jres=coloricons.skull
+    //% jres=icons.skull
     Skull,
     //% block="umbrella"
-    //% jres=coloricons.umbrella
+    //% jres=icons.umbrella
     Umbrella,
     //% block="snake"
-    //% jres=coloricons.snake
+    //% jres=icons.snake
     Snake,
     //% block="rabbit"
-    //% jres=coloricons.rabbit
+    //% jres=icons.rabbit
     Rabbit,
     //% block="cow"
-    //% jres=coloricons.cow
+    //% jres=icons.cow
     Cow,
     //% block="quarter note"
-    //% jres=coloricons.quarternote
+    //% jres=icons.quarternote
     QuarterNote,
     //% block="eigth note"
-    //% jres=coloricons.eigthnote
+    //% jres=icons.eigthnote
     EigthNote,
     //% block="pitchfork"
-    //% jres=coloricons.pitchfork
+    //% jres=icons.pitchfork
     Pitchfork,
     //% block="target"
-    //% jres=coloricons.target
+    //% jres=icons.target
     Target,
     //% block="triangle"
-    //% jres=coloricons.triangle
+    //% jres=icons.triangle
     Triangle,
     //% block="left triangle"
-    //% jres=coloricons.lefttriangle
+    //% jres=icons.lefttriangle
     LeftTriangle,
     //% block="chess board"
-    //% jres=coloricons.chessboard
+    //% jres=icons.chessboard
     Chessboard,
     //% block="diamond"
-    //% jres=coloricons.diamond
+    //% jres=icons.diamond
     Diamond,
     //% block="small diamond"
-    //% jres=coloricons.smalldiamond
+    //% jres=icons.smalldiamond
     SmallDiamond,
     //% block="square"
-    //% jres=coloricons.square
+    //% jres=icons.square
     Square,
     //% block="small square"
-    //% jres=coloricons.smallsquare
+    //% jres=icons.smallsquare
     SmallSquare,
     //% block="scissors"
-    //% jres=coloricons.scissors
+    //% jres=icons.scissors
     Scissors
 }
 
@@ -354,7 +354,7 @@ namespace colorbit {
         //% icon.fieldEditor="imagedropdown"
         //% icon.fieldOptions.columns="5"
         //% icon.fieldOptions.width="380"
-        //% icon.fieldOptions.maxRows=4
+        //% icon.fieldOptions.maxRows=9
         showColorIcon(myicon: ColorIcon, rgb: number): void {
             let str: string = "";
             if(myicon==0) str="51bitpasswd:0x23be,0x4200";     //ChristmasTree
