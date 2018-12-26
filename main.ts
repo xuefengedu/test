@@ -297,12 +297,12 @@ namespace colorbit {
 	
 	/**
 	 * Draws an image on the ColorBit screen.
-	 * @param color leds the pattern of LED to turn on/off
+	 * @param leds the pattern of LED to turn on/off
 	 */
 	//% weight=95 blockGap=8
 	//% imageLiteral=1 async
 	//% blockId=colorbit_show_color_leds
-	//% block="show ColorBit leds" icon="\uf00a"
+	//% block="%colorbit_51bit|show ColorBit leds" icon="\uf00a"
 	//% parts="colorbit" shim=colorbit::showColorLeds
 	showColorLeds(leds: string): void {
             console.log("color leds: " + leds);
