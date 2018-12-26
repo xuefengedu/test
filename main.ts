@@ -302,10 +302,11 @@ namespace colorbit {
 	//% weight=95 blockGap=8
 	//% imageLiteral=1 async
 	//% blockId=colorbit_show_color_leds
-	//% block="%colorbit_51bit|show ColorBit leds" icon="\uf00a"
+	//% block="%colorbit_51bit|show ColorBit leds with color %rgb=colorbit_colors" icon="\uf00a"
 	//% parts="colorbit" shim=colorbit::showColorLeds
-	showColorLeds(leds: string): void {
+	showColorLeds(leds: string, rgb: number): void {
             console.log("color leds: " + leds);
+	    console.log("rgb: " + rgb);
             return;
     	}
         
