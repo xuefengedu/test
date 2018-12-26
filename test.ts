@@ -16,8 +16,8 @@ namespace test {
     //% icon="\uf00a"
     //% parts="test" shim=colorbit::showColorLeds
     export function showColorBitLeds(leds: string): string {
-        basic.showString('A:' + leds);
-        console.log("color leds: " + leds);
+        //basic.showString('A:' + leds);
+        //console.log("color leds: " + leds);
 	return "test";
     }
 }
