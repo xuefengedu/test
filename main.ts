@@ -29,11 +29,11 @@ enum BitColors {
  */
 enum ColorIcon {
         //% block="ChristmasTree"
-        ChristmasTree = 0x23be4200,
+        ChristmasTree = 0,
         //% block="heart"
-        heart = 0x57fe0200,
+        heart = 1,
         //% block="happy"
-        happy = 0x28101700,
+        happy = 2,
     }
 
 
@@ -237,9 +237,10 @@ namespace colorbit {
         //% weight=100
         //% parts="colorbit"
         showColorIcon(myicon: ColorIcon, rgb: number): void {
-            let str: string = "51bitpasswd:";
-            str = str+ myicon;
-            str = str.substr(12,6)+":0x"+str.substr(18,4);
+            let str: string = "";
+            if(myicon==0) str="51bitpasswd:0x23be:0x4200";
+            else if(myicon==1) str="51bitpasswd:0x57fe:0x0200";
+            else if(myicon==2) str="51bitpasswd:0x2810:0x1700";
             this.setStringColor(str,rgb);
         }
 	
