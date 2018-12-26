@@ -298,6 +298,7 @@ namespace colorbit {
 	/**
 	 * Draws an image on the ColorBit screen.
 	 * @param leds the pattern of LED to turn on/off
+	 * @param rgb RGB color of the LED
 	 */
 	//% weight=95 blockGap=8
 	//% imageLiteral=1 async
