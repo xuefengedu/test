@@ -294,11 +294,6 @@ namespace colorbit {
             this.setAllRGB(rgb);
             this.show();
         }
-	
-	showColorLeds(leds: string): void {
-            console.log("color leds: " + leds);
-            return;
-    	}
         
         nextNum(): number {
             if(this.lastcolor==BitColors.Red)
@@ -1064,15 +1059,27 @@ namespace colorbit {
     /**
     * Draws an image on the ColorBit screen.
     * @param leds the pattern of LED to turn on/off
-    * @param colorbit_51bit the variable of ColorBit
+    * @param rgb the variable of ColorBit
     */
-    //% blockId="colorbit_show_color_leds" block="%colorbit_51bit|ColorBit leds"
+    //% blockId="colorbit_show_color_leds" block="ColorBit leds with color %rgb=colorbit_colors"
     //% imageLiteral=1
     //% weight=95 blockGap=8
     //% icon="\uf00a"
     //% parts="colorbit" shim=colorbit::showColorLeds
-    export function showColorBitLeds(leds: string, colorbit_51bit: Strip): void {
-        colorbit_51bit.showColorLeds('Test:' + leds);
+    //% blockSetVariable=colorbit_51bit
+    export function showColorBitLeds(leds: string, rgb: number): Strip {
+	let strip = new Strip();
+        let stride = mode === 3;
+        strip.buf = pins.createBuffer(25 * stride);
+        strip.start = 0;
+        strip._length = 25;
+        strip._mode = mode;
+        strip._matrixWidth = 0;
+        strip.setBrightness(16);
+        strip.setPin(pin);
+        strip.ismulticolor=false;
+        strip.lastcolor=BitColors.Red;
+        return strip;
     }
 
     /**
