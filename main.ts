@@ -305,7 +305,7 @@ namespace colorbit {
 	//% blockId=colorbit_show_color_leds
 	//% block="%colorbit_51bit|show ColorBit leds with color %rgb=colorbit_colors" icon="\uf00a"
 	//% parts="colorbit" shim=colorbit::showColorLeds
-	export function showColorLeds(leds: string, rgb: number): void {
+	showColorLeds(leds: string, rgb: number): void {
 	    console.log("color leds: " + leds);
 	    console.log("rgb: " + rgb);
              return;
