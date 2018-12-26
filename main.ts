@@ -1064,7 +1064,7 @@ namespace colorbit {
     /**
     * Draws an image on the ColorBit screen.
     * @param leds the pattern of LED to turn on/off
-    * @param strip the variable of ColorBit
+    * @param colorbit_51bit the variable of ColorBit
     */
     //% blockId="colorbit_show_color_leds" block="%colorbit_51bit|ColorBit leds"
     //% imageLiteral=1
