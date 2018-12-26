@@ -10,7 +10,6 @@
     "files": [
         "README.md",
         "main.ts",
-        "colorbit.cpp",
         "coloricons.jres",
         "_locales/zh/colorbit-strings.json"
     ],
