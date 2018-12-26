@@ -17,7 +17,7 @@ namespace colorbit {
         //% block="show ColorBit leds" icon="\uf00a"
         //% parts="colorbit"
         void showColorLeds(ImageLiteral_ leds, int interval = 400) {
-			//MicroBitImage i(imageBytes(leds));
-			basic.showNumber(leds);
+	    //MicroBitImage i(imageBytes(leds));
+	    basic.showString(''+leds);
         }
 }
