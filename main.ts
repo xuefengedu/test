@@ -1069,14 +1069,14 @@ namespace colorbit {
     //% blockSetVariable=colorbit_51bit
     export function showColorBitLeds(leds: string, rgb: number): Strip {
 	let strip = new Strip();
-        let stride = mode === 3;
-        strip.buf = pins.createBuffer(25 * stride);
+        let stride = 3;
+        strip.buf = DigitalPin.P0.createBuffer(25 * stride);
         strip.start = 0;
         strip._length = 25;
-        strip._mode = mode;
+        strip._mode = BitColorMode.RGB_RGB;
         strip._matrixWidth = 0;
         strip.setBrightness(16);
-        strip.setPin(pin);
+        strip.setPin(DigitalPin.P0);
         strip.ismulticolor=false;
         strip.lastcolor=BitColors.Red;
         return strip;
