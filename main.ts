@@ -1057,32 +1057,6 @@ namespace colorbit {
     }
 
     /**
-    * Draws an image on the ColorBit screen.
-    * @param leds the pattern of LED to turn on/off
-    * @param rgb the variable of ColorBit
-    */
-    //% blockId="colorbit_show_color_leds" block="ColorBit leds with color %rgb=colorbit_colors"
-    //% imageLiteral=1
-    //% weight=95 blockGap=8
-    //% icon="\uf00a"
-    //% parts="colorbit" shim=colorbit::showColorLeds
-    //% blockSetVariable=colorbit_51bit
-    export function showColorBitLeds(leds: string, rgb: number): Strip {
-	let strip = new Strip();
-        let stride = 3;
-        strip.buf = pins.createBuffer(25 * stride);
-        strip.start = 0;
-        strip._length = 25;
-        strip._mode = BitColorMode.RGB_RGB;
-        strip._matrixWidth = 0;
-        strip.setBrightness(16);
-        strip.setPin(DigitalPin.P0);
-        strip.ismulticolor=false;
-        strip.lastcolor=BitColors.Red;
-        return strip;
-    }
-
-    /**
      * Converts red, green, blue channels into a RGB color
      * @param red value of the red channel between 0 and 255. eg: 255
      * @param green value of the green channel between 0 and 255. eg: 255
