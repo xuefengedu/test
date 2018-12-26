@@ -361,43 +361,43 @@ namespace colorbit {
             else if(myicon==1) str="51bitpasswd:0x57fe,0xe200";//Heart
             else if(myicon==2) str="51bitpasswd:0x029c,0x4000";//SmallHeart
             else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Yes
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//No
+            else if(myicon==3) str="51bitpasswd:0x8a88,0xa880";//No
             else if(myicon==3) str="51bitpasswd:0x0281,0x1700";//Happy
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Sad
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Confused
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Angry
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Asleep
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Surprised
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Silly
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Fabulous
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Meh
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//TShirt
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Rollerskate
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Duck
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//House
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Tortoise
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Butterfly
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//StickFigure
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Ghost
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Sword
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Giraffe
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Skull
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Umbrella
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Snake
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Rabbit
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Cow
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//QuarterNote
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//EigthNote
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Pitchfork
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Target
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Triangle
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//LeftTriangle
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Chessboard
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Diamond
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//SmallDiamond
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//Square
-            else if(myicon==3) str="51bitpasswd:0x0045,0x4400";//SmallSquare
-            else if(myicon==2) str="51bitpasswd:0x0045,0x4400";//Scissors
+            else if(myicon==3) str="51bitpasswd:0x0280,0xe880";//Sad
+            else if(myicon==3) str="51bitpasswd:0x0280,0xaa80";//Confused
+            else if(myicon==3) str="51bitpasswd:0x8a81,0xfa80";//Angry
+            else if(myicon==3) str="51bitpasswd:0x06c0,0xe000";//Asleep
+            else if(myicon==3) str="51bitpasswd:0x5008,0xa200";//Surprised
+            else if(myicon==3) str="51bitpasswd:0x883e,0x3180";//Silly
+            else if(myicon==3) str="51bitpasswd:0xfec0,0xa700";//Fabulous
+            else if(myicon==3) str="51bitpasswd:0xd804,0x4400";//Meh
+            else if(myicon==3) str="51bitpasswd:0xdfdc,0xe700";//TShirt
+            else if(myicon==3) str="51bitpasswd:0x18ff,0xf500";//Rollerskate
+            else if(myicon==3) str="51bitpasswd:0x671e,0xe000";//Duck
+            else if(myicon==3) str="51bitpasswd:0x23be,0xe500";//House
+            else if(myicon==3) str="51bitpasswd:0x03be,0xa000";//Tortoise
+            else if(myicon==3) str="51bitpasswd:0x03be,0xa000";//Butterfly
+            else if(myicon==3) str="51bitpasswd:0x27c8,0xa880";//StickFigure
+            else if(myicon==3) str="51bitpasswd:0x757f,0xfa80";//Ghost
+            else if(myicon==3) str="51bitpasswd:0x2108,0xe200";//Sword
+            else if(myicon==3) str="51bitpasswd:0xc210,0xe500";//Giraffe
+            else if(myicon==3) str="51bitpasswd:0x757e,0xe700";//Skull
+            else if(myicon==3) str="51bitpasswd:0x77c9,0x4e00";//Umbrella
+            else if(myicon==3) str="51bitpasswd:0xc6d4,0xe000";//Snake
+            else if(myicon==3) str="51bitpasswd:0xa53d,0xaf00";//Rabbit
+            else if(myicon==3) str="51bitpasswd:0x8c7e,0xe200";//Cow
+            else if(myicon==3) str="51bitpasswd:0x2109,0xce00";//QuarterNote
+            else if(myicon==3) str="51bitpasswd:0x218b,0xce00";//EigthNote
+            else if(myicon==3) str="51bitpasswd:0xad7e,0x4200";//Pitchfork
+            else if(myicon==3) str="51bitpasswd:0x23b6,0xe200";//Target
+            else if(myicon==3) str="51bitpasswd:0x0115,0xf000";//Triangle
+            else if(myicon==3) str="51bitpasswd:0x8629,0x2f80";//LeftTriangle
+            else if(myicon==3) str="51bitpasswd:0x5555,0x5500";//Chessboard
+            else if(myicon==3) str="51bitpasswd:0x22a2,0xa200";//Diamond
+            else if(myicon==3) str="51bitpasswd:0x0114,0x4000";//SmallDiamond
+            else if(myicon==3) str="51bitpasswd:0xfc63,0x1f80";//Square
+            else if(myicon==3) str="51bitpasswd:0x0394,0xe000";//SmallSquare
+            else if(myicon==2) str="51bitpasswd:0xce89,0xac80";//Scissors
             this.setStringColor(str,rgb);
         }
 	
