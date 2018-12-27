@@ -11,7 +11,7 @@
         "README.md",
         "main.ts",
         "test.d.ts",
-        "colorbit.cpp",
+        "test.cpp",
         "coloricons.jres",
         "_locales/zh/colorbit-strings.json"
     ],
