@@ -1,5 +1,5 @@
 #include "pxt.h"
-namespace colorbit {
+namespace test {
 	        //%
 	        string showColorLeds(ImageLiteral_ leds) {
 			MicroBitImage i(imageBytes(leds));
